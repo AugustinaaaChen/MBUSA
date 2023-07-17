@@ -1,1 +1,5 @@
 import requests
+
+response = requests.get('https://randomuser.me/api')
+#print out the status code, which will let us know whether our connection was successful or not. If successful, it will reture 200.
+print(response.status_code)
